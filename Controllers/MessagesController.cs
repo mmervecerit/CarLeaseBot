@@ -23,13 +23,12 @@ namespace AracKiralama
     public class MessagesController : ApiController
     {
 
-        //static readonly string APIKEY = "c2a91b23f5d24ce389d1e687900a6421";
-        //static readonly string TRANSLATETO = "en";
+
         static string host = "https://api.cognitive.microsofttranslator.com";
         static string path = "/translate?api-version=3.0";
         static string params_ = "&to=en";
         static string uri = host + path + params_;
-        static string APIKEY = "c2a91b23f5d24ce389d1e687900a6421";
+        static string APIKEY = "TRANS_API_KEY";
 
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
         {
